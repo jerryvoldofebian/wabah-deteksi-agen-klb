@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo } from 'react';
 import { Search, Filter, AlertTriangle, Clock, TestTube, Package, ChevronDown, ChevronUp } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,7 +12,7 @@ import { klbData, searchBySymptoms, filterByIncubationTime, filterByCategory, KL
 
 const KLBIdentificationApp = () => {
   const [searchSymptoms, setSearchSymptoms] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [minIncubation, setMinIncubation] = useState<string>('');
   const [maxIncubation, setMaxIncubation] = useState<string>('');
   const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set());
@@ -34,7 +35,7 @@ const KLBIdentificationApp = () => {
     }
 
     // Filter by category
-    if (selectedCategory) {
+    if (selectedCategory && selectedCategory !== 'all') {
       results = filterByCategory(results, selectedCategory);
     }
 
@@ -135,7 +136,7 @@ const KLBIdentificationApp = () => {
                     <SelectValue placeholder="Semua kategori" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Semua kategori</SelectItem>
+                    <SelectItem value="all">Semua kategori</SelectItem>
                     <SelectItem value="bacterial">Bakteri</SelectItem>
                     <SelectItem value="viral">Virus</SelectItem>
                     <SelectItem value="toxin">Toksin</SelectItem>
