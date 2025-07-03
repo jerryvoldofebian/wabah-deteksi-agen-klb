@@ -322,7 +322,7 @@ export const klbData: KLBData[] = [
     tandaGejala: ['kejang perut (kadang-kadang berdarah)', 'mual', 'muntah', 'demam', 'menggigil', 'sakit kepala', 'sakit otot', 'kencing berdarah (utk galur hemoragik)'],
     panganTerlibat: ['keju lunak', 'hamburger setengah matang', 'air'],
     sampelSpesimen: ['pangan', 'feses', 'usapan rektal'],
-    faktorKontribusi: 'Orang terinfeksi menangani pangan, pendinginan yang tak tepat, pemasakan yang tidak cukup, pembersihan dan sanitasi peralatan yang tidak tepat, mengonsumsi daging mentah atau tidak matang (gejala hemoragik)',
+    faktorKontribusi: 'Orang terinfeksi menangani pangan, pendinginan yang tak tepat, pemasakan yang tidak tepat, pemasakan kembali yang tidak cukup',
     kategori: 'bacterial'
   },
 
@@ -561,6 +561,244 @@ export const klbData: KLBData[] = [
     panganTerlibat: ['berbagai ikan laut tropis (barracuda, grouper, red snapper, amber jack, goat fish, skip jack, parrot fish)'],
     sampelSpesimen: ['sisa pangan', 'darah'],
     faktorKontribusi: 'Mengonsumsi hati, saluran pencernaan, kelenjar kelamin, daging ikan tropis dari kerang yang terkontaminasi',
+    kategori: 'toxin'
+  },
+
+  // KERACUNAN BOTULINUM
+  {
+    id: 'keracunan-botulinum',
+    penyakit: 'Keracunan botulinum',
+    penyebabEtiologi: 'Neurotoksin A,B,E,F dari Clostridium botulinum. Spora ditemukan di tanah, lumpur air tawar, dan hewan',
+    waktuInkubasi: '2 jam sampai 8 hari, rata-rata 18 - 36 jam',
+    waktuInkubasiMenit: 120,
+    tandaGejala: ['gejala saluran pencernaan mendahului gejala syaraf', 'vertigo', 'penglihatan ganda', 'mulut kering', 'sukar menelan', 'berbicara dan bernafas', 'lemah', 'otot yang tidak terus menurun', 'konstipasi', 'pupil membesar atau melotot diam', 'kelumpuhan pernafasan', 'kematian'],
+    panganTerlibat: ['makanan berasam rendah yang dikalengkan', 'ikan asap', 'kentang matang', 'pie beku', 'daging olahan yang ditinggal semalaman di oven yang tidak dipanaskan', 'telur ikan fermentasi', 'ikan', 'hewan laut'],
+    sampelSpesimen: ['pangan', 'darah', 'feses', 'cucian perut'],
+    faktorKontribusi: 'Proses pemanasan yang tidak cukup pada pembuatan makanan kaleng dan ikan asap, kontaminasi pasca pengolahan, fermentasi yang tidak terkontrol, kurang jam atau suhu waktu yang tidak tepat, penyimpangan suhu-waktu yang tidak tepat',
+    kategori: 'bacterial'
+  },
+
+  // KERACUNAN CRONOBACTER SAKAZAKII
+  {
+    id: 'cronobacter-sakazakii',
+    penyakit: 'Keracunan Cronobacter sakazakii',
+    penyebabEtiologi: 'Cronobacter sakazakii',
+    waktuInkubasi: '1 hari sampai 3 minggu, rata-rata 1 minggu',
+    waktuInkubasiMenit: 1440,
+    tandaGejala: ['demam', 'denyut jantung cepat', 'kejang', 'kekuatan neurologis lain'],
+    panganTerlibat: ['air', 'coklat', 'kentang', 'sereal', 'pasta', 'keju', 'sosis', 'daging awetan', 'sayuran', 'susu bubuk'],
+    sampelSpesimen: ['pangan'],
+    faktorKontribusi: 'Penanganan pangan yang tidak baik, pasteurisasi pangan yang tidak tepat',
+    kategori: 'bacterial'
+  },
+
+  // KERACUNAN MERKURI
+  {
+    id: 'keracunan-merkuri',
+    penyakit: 'Keracunan merkuri (Hg)',
+    penyebabEtiologi: 'Senyawa etil dan metil merkuri dari limbah industri dan Hg-organik dalam funglsida',
+    waktuInkubasi: '1 minggu atau lebih',
+    waktuInkubasiMenit: 10080,
+    tandaGejala: ['mati rasa', 'lemah', 'kaki', 'kelumpuhan', 'kerusakan penglihatan', 'buta', 'koma'],
+    panganTerlibat: ['biji-bijian yang diberi perlakuan dengan fungisida yang mengandung Hg', 'daging babi', 'ikan', 'kekeringan yang terpapar Hg'],
+    sampelSpesimen: ['pangan', 'urin', 'darah', 'rambut'],
+    faktorKontribusi: 'Aliran air atau perairan yang terpolusi senyawa Hg, pakai hewan dengan perlakuan limbah yang mengandung Hg, memakai biji-bijian yang mendapat perlakuan fungisida Hg atau daging yang terpapar Hg',
+    kategori: 'toxin'
+  },
+
+  // KERACUNAN TRIORTOKRESIL FOSFAT
+  {
+    id: 'triortokresil-fosfat',
+    penyakit: 'Keracunan Triortokresil fosfat',
+    penyebabEtiologi: 'Triortokresil fosfat digunakan sebagai larutan pengekstrak atau substitusi',
+    waktuInkubasi: '5 - 21 hari, rata-rata 10 hari',
+    waktuInkubasiMenit: 7200,
+    tandaGejala: ['gejala saluran pencernaan', 'sakit kaki', 'tidak dapat melangkah naik', 'lemah kaki dan pergelangan'],
+    panganTerlibat: ['minyak makan', 'ekstrak pangan', 'lain yang terkontaminasi triortokresil fosfat'],
+    sampelSpesimen: ['pangan', 'biopsi saraf perut'],
+    faktorKontribusi: 'Menggunakan senyawa triortokresil fosfat sebagai pengekstrak pangan atau sebagai minyak untuk memasak atau untuk salad dressing',
+    kategori: 'toxin'
+  },
+
+  // BRUSELOSIS
+  {
+    id: 'bruselosis',
+    penyakit: 'Bruselosis',
+    penyebabEtiologi: 'Brucella abortus, B. melitensis dan B. suis dari jaringan dan susu hewan yang terinfeksi',
+    waktuInkubasi: '7 - 21 hari',
+    waktuInkubasiMenit: 10080,
+    tandaGejala: ['demam', 'menggigil', 'berkeringat', 'lemah', 'tidak enak badan', 'sakit kepala', 'sakit otot dan sendi', 'kehilangan berat'],
+    panganTerlibat: ['susu mentah', 'keju susu kambing'],
+    sampelSpesimen: ['darah'],
+    faktorKontribusi: 'Pasteurisasi susu yang tidak cukup, hewan ternak yang terinfeksi oleh Brucella',
+    kategori: 'bacterial'
+  },
+
+  // LISTERIOSIS
+  {
+    id: 'listeriosis',
+    penyakit: 'Listeriosis',
+    penyebabEtiologi: 'Listeria monocytogenes dari pupuk kandang',
+    waktuInkubasi: '3 - 70 hari, rata-rata 4 - 21 hari',
+    waktuInkubasiMenit: 4320,
+    tandaGejala: ['demam rendah', 'pening atau kejei hati', 'bayi lahir mati', 'meningitis', 'pembengkakan otak', 'keracunan darah', 'kematian'],
+    panganTerlibat: ['salad kubis', 'keju produk hewan'],
+    sampelSpesimen: ['darah', 'urin', 'cairan otak'],
+    faktorKontribusi: 'Pemasakan tidak sempurna, pasteurisasi susu yang tidak cukup, pendinginan yang terlalu lama, kelompok berisiko tinggi : orang hamil, lansia, bayi, dan orang-orang yang immunosuppressed',
+    kategori: 'bacterial'
+  },
+
+  // Q FEVER
+  {
+    id: 'q-fever',
+    penyakit: 'Q fever',
+    penyebabEtiologi: 'Coxiella burnetii dari jaringan dan susu hewan yang terinfeksi',
+    waktuInkubasi: '14 - 26 hari, rata-rata 20 hari',
+    waktuInkubasiMenit: 20160,
+    tandaGejala: ['menggigil', 'sakit kepala', 'lemah', 'tidak enak badan', 'berkeringat', 'demam', 'batuk', 'nyeri dada'],
+    panganTerlibat: ['susu mentah (jarang)'],
+    sampelSpesimen: ['darah'],
+    faktorKontribusi: 'Mengonsumsi susu mentah yang terkontaminasi, pasteurisasi susu tidak cukup',
+    kategori: 'bacterial'
+  },
+
+  // DEMAM TIFUS DAN PARATIFUS
+  {
+    id: 'demam-tifus-paratifus',
+    penyakit: 'Demam tifus dan paratifus',
+    penyebabEtiologi: 'Salmonella Typhi (typhoid) dari feses orang yang terinfeksi. Serotipe Salmonella lain dari feses orang atau hewan yang terinfeksi',
+    waktuInkubasi: '7 - 28 hari, rata-rata 14 hari',
+    waktuInkubasiMenit: 10080,
+    tandaGejala: ['tidak enak badan', 'sakit kepala', 'demam', 'batuk', 'mual', 'muntah', 'konstipasi', 'sakit perut', 'bintik-bintik merah', 'feses berdarah'],
+    panganTerlibat: ['kekeringan', 'pangan yang terkontaminasi', 'susu segar', 'kontaminasi pasca pengolahan daging', 'keju', 'selada air', 'air'],
+    sampelSpesimen: ['pangan', 'feses', 'usapan rektal', 'darah'],
+    faktorKontribusi: 'Orang terinfeksi menyentuh pangan, higiene perorangan yang buruk, pemasakan yang tidak sempurna, pendinginan yang tidak tepat, sistem pembuangan limbah yang tidak tepat, pangan dari sumber tercemar, memanen kerang dari perairan yang terpolusi limbah',
+    kategori: 'bacterial'
+  },
+
+  // SEPTICEMIA VIBRIO VULNIFICUS
+  {
+    id: 'septicemia-vibrio-vulnificus',
+    penyakit: 'Septicemia Vibrio vulnificus',
+    penyebabEtiologi: 'Vibrio vulnificus dari air laut',
+    waktuInkubasi: '16 jam, rata-rata 24 jam',
+    waktuInkubasiMenit: 960,
+    tandaGejala: ['tidak enak badan', 'menggigil', 'demam', 'lemah', 'luka pada kulit', 'kematian'],
+    panganTerlibat: ['kerang mentah'],
+    sampelSpesimen: ['darah'],
+    faktorKontribusi: 'Mengonsumsi kerang mentah, pemasakan tidak sempurna, orang dengan liver yang rusak berisiko tinggi',
+    kategori: 'bacterial'
+  },
+
+  // HEPATITIS A
+  {
+    id: 'hepatitis-a',
+    penyakit: 'Hepatitis A (infeksi hepatitis)',
+    penyebabEtiologi: 'Virus hepatitis A dari feses, urin, darah orang atau primata lain yang terinfeksi',
+    waktuInkubasi: '10 - 50 hari rata-rata 25 hari',
+    waktuInkubasiMenit: 14400,
+    tandaGejala: ['demam', 'tidak enak badan', 'keletihan', 'anorexia', 'mual', 'sakit perut', 'kekuningan', 'kekeringan pada permukaan kulit'],
+    panganTerlibat: ['kerang mentah', 'salad', 'pangan dingin', 'pangan yang terkontaminasi'],
+    sampelSpesimen: ['urin', 'darah'],
+    faktorKontribusi: 'Orang terinfeksi menyentuh makanan, higiene personalia yang buruk, pemasakan yang tidak sempurna, memanen kerang dari perairan yang terpolusi limbah, sistem pembuangan yang tidak tepat',
+    kategori: 'viral'
+  },
+
+  // ANGIOSTRONGILIASIS MENINGOENSEFALIT
+  {
+    id: 'angiostrongiliasis-meningoensefalit',
+    penyakit: 'Angiostrongiliasis Meningoensefalit (cacing paru-paru tikus)',
+    penyebabEtiologi: 'Angiostrongylus cantonensis (cacing paru-paru tikus) dari feses dan tanah',
+    waktuInkubasi: '14 - 16 hari',
+    waktuInkubasiMenit: 20160,
+    tandaGejala: ['sakit perut', 'leher dan punggung kaku', 'demam ringan'],
+    panganTerlibat: ['keong mentah', 'bekicot'],
+    sampelSpesimen: ['darah'],
+    faktorKontribusi: 'Mengonsumsi pangan mentah, pemanasan tidak cukup',
+    kategori: 'parasitic'
+  },
+
+  // TOKSOPLASMOSIS
+  {
+    id: 'toksoplasmosis',
+    penyakit: 'Toksoplasmosis',
+    penyebabEtiologi: 'Toxoplasma gondii dari jaringan dan hewan',
+    waktuInkubasi: '10 - 13 hari',
+    waktuInkubasiMenit: 14400,
+    tandaGejala: ['demam', 'sakit kepala', 'sakit otot', 'iritasi kulit (merah)'],
+    panganTerlibat: ['daging mentah atau tidak cukup matang'],
+    sampelSpesimen: ['biopsi kelenjar limpa', 'darah'],
+    faktorKontribusi: 'Mengonsumsi daging mentah, pemanasan tidak cukup',
+    kategori: 'parasitic'
+  },
+
+  // TRIKINOSIS
+  {
+    id: 'trikinosis',
+    penyakit: 'Trikinosis',
+    penyebabEtiologi: 'Trichinella spiralis (cacing bulat) dari daging babi yang terinfestasi, beruang, singa laut',
+    waktuInkubasi: '4 - 28 hari; rata-rata 9 hari',
+    waktuInkubasiMenit: 5760,
+    tandaGejala: ['sakit perut', 'demam', 'bengkak di sekitar mata', 'sakit otot', 'menggigil', 'lemah', 'sukar bernafas'],
+    panganTerlibat: ['daging babi', 'daging beruang', 'daging liar', 'dan daging kambing giling yang terkontaminasi'],
+    sampelSpesimen: ['darah', 'biopsi otot', 'uji kulit'],
+    faktorKontribusi: 'Mengonsumsi daging babi mentah atau pemasakan yang tidak sempurna, proses pemasakan tidak cukup, memberi makanan babi dengan sampah yang tidak dimasak atau tidak di panaskan',
+    kategori: 'parasitic'
+  },
+
+  // KERACUNAN HISTAMIN (SCOMBROID)
+  {
+    id: 'keracunan-histamin-scombroid',
+    penyakit: 'Keracunan histamin (scombroid)',
+    penyebabEtiologi: 'Histamin yang diproduksi oleh Proteus spp. atau bakteri lainnya',
+    waktuInkubasi: 'Beberapa menit sampai 1 jam',
+    waktuInkubasiMenit: 5,
+    tandaGejala: ['sakit kepala', 'pusing', 'mual', 'muntah', 'rasa seperti lada di mulut', 'tenggorokan rasa terakan', 'muka bengkak dan merah', 'sakit perut', 'diare', 'kulit gatal'],
+    panganTerlibat: ['mackerel', 'tuna', 'bluefish', 'ikan mahi-mahi', 'keju'],
+    sampelSpesimen: ['pangan', 'muntahan'],
+    faktorKontribusi: 'Proses pendinginan yang tidak tepat, pendinginan ikan yang tidak tepat, pemerinan keju yang tidak tepat',
+    kategori: 'toxin'
+  },
+
+  // KERACUNAN MONOSODIUM GLUTAMAT (MSG)
+  {
+    id: 'keracunan-msg',
+    penyakit: 'Keracunan Monosodium glutamat (MSG) (Chinese restaurant syndrome)',
+    penyebabEtiologi: 'Monosodium glutamat (MSG)',
+    waktuInkubasi: 'Beberapa menit sampai 1 jam',
+    waktuInkubasiMenit: 5,
+    tandaGejala: ['rasa terbakar di bagian belakang leher', 'lengan bawah', 'dada', 'merasa tegang', 'gatal', 'merah', 'pusing', 'sakit kepala', 'mual'],
+    panganTerlibat: ['makanan yang diberi bumbu mengandung MSG'],
+    sampelSpesimen: ['pangan'],
+    faktorKontribusi: 'Penggunaan MSG dalam jumlah berlebihan sebagai penegas cita rasa',
+    kategori: 'toxin'
+  },
+
+  // KERACUNAN ASAM NIKOTINAT (NIACIN)
+  {
+    id: 'keracunan-asam-nikotinat',
+    penyakit: 'Keracunan Asam nikotinat (niacin)',
+    penyebabEtiologi: 'Vitamin, natrium nikotinat sebagai pengawet pewarna',
+    waktuInkubasi: 'Beberapa menit sampai 1 jam',
+    waktuInkubasiMenit: 5,
+    tandaGejala: ['kemeriahan', 'terasa hangat', 'gatal', 'sakit perut', 'bengkak pada muka dan lutut'],
+    panganTerlibat: ['daging atau pangan lain yang ditambah natrium nikotinat', 'termasuk makanan bayi'],
+    sampelSpesimen: ['pangan'],
+    faktorKontribusi: 'Penggunaan natrium nikotinat sebagai pengawet',
+    kategori: 'toxin'
+  },
+
+  // HIPERVITAMINOSIS A
+  {
+    id: 'hipervitaminosis-a',
+    penyakit: 'Hipervitaminosis A',
+    penyebabEtiologi: 'Vitamin A',
+    waktuInkubasi: '1 - 6 jam',
+    waktuInkubasiMenit: 60,
+    tandaGejala: ['sakit kepala', 'gejala saluran pencernaan', 'pusing', 'pingsan', 'insomnia', 'kulit bersisik atau mengelupas'],
+    panganTerlibat: ['hati dan ginjal hewan (mamalia) kutub'],
+    sampelSpesimen: ['darah'],
+    faktorKontribusi: 'Mengonsumsi hati dan ginjal dari hewan yang berasal dari daerah kutub, suplemen pangan yang berlebihan',
     kategori: 'toxin'
   }
 ];
